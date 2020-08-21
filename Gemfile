@@ -40,6 +40,7 @@ gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'devise', '~> 4.7', '>= 4.7.2'
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -51,6 +52,7 @@ group :development do
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
   gem 'better_errors', '~> 2.7', '>= 2.7.1'
   gem 'guard', '~> 2.16', '>= 2.16.2'
+  gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 end
 
 group :test do
